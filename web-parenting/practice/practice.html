@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batch Selection Example</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Batch Selection Example</h1>
+
+  <label for="batch">Select Batch Year:</label>
+  <select id="batch" onchange="showSections()">
+    <option value="">Select...</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+  </select>
+
+  <div id="sectionContainer" style="display: none;">
+    <table id="sectionTable">
+      <thead>
+        <tr>
+          <th>Section</th>
+          <th>Adviser</th>
+          <th>Number of Students</th>
+        </tr>
+      </thead>
+      <tbody id="sectionList"></tbody>
+    </table>
+  </div>
+
+  <script src="practice.json"></script>
+</body>
+</html>

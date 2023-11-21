@@ -1,0 +1,65 @@
+function showSections() {
+    var batch = document.getElementById("batch");
+    var sectionContainer = document.getElementById("sectionContainer");
+    var sectionList = document.getElementById("sectionList");
+  
+    // Clear existing sections
+    sectionList.innerHTML = "";
+  
+    // Check if a batch is selected
+    if (batch.value !== "") {
+      // Display the section container
+      sectionContainer.style.display = "block";
+  
+      // Get sections based on the selected batch
+      var sections = getSectionsForBatch(batch.value);
+  
+      // Create rows for each section in the table
+      sections.forEach(function (section) {
+        var row = document.createElement("tr");
+  
+        var sectionCell = document.createElement("td");
+        sectionCell.textContent = section.section;
+        row.appendChild(sectionCell);
+  
+        var adviserCell = document.createElement("td");
+        adviserCell.textContent = section.adviser;
+        row.appendChild(adviserCell);
+  
+        var numStudentsCell = document.createElement("td");
+        numStudentsCell.textContent = section.numStudents;
+        row.appendChild(numStudentsCell);
+  
+        sectionList.appendChild(row);
+      });
+    } else {
+      // Hide the section container if no batch is selected
+      sectionContainer.style.display = "none";
+    }
+  }
+  
+  function getSectionsForBatch(batchYear) {
+    // Implement your logic here to retrieve sections based on the selected batch year
+    // You can use AJAX requests, fetch API, or any other method to get data from a server or a static data source
+    // For this example, we'll use a simple mapping of batch years to sections with additional information
+    var sectionMap = {
+      "2021": [
+        { "section": "A", "adviser": "John Doe", "numStudents": 30 },
+        { "section": "B", "adviser": "Alice Smith", "numStudents": 25 },
+        { "section": "C", "adviser": "Bob Johnson", "numStudents": 28 }
+      ],
+      "2022": [
+        { "section": "X", "adviser": "Jane Brown", "numStudents": 32 },
+        { "section": "Y", "adviser": "Mark Davis", "numStudents": 27 },
+        { "section": "Z", "adviser": "Sarah Wilson", "numStudents": 29 }
+      ],
+      "2023": [
+        { "section": "P", "adviser": "Mike Thompson", "numStudents": 31 },
+        { "section": "Q", "adviser": "Emily Rodriguez", "numStudents": 26 },
+        { "section": "R", "adviser": "David Lee", "numStudents": 30 }
+      ]
+    };
+  
+    return sectionMap[batchYear] || [];
+  }
+  
