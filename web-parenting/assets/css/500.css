@@ -1,0 +1,21 @@
+body{
+    background-color: #f0f8ff;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section div{
+    margin: 0;
+    padding: 0;
+}
+section .errorTitle{
+    font-size: 80px;
+}
+section .errorPage{
+    font-size: 40px;
+}
