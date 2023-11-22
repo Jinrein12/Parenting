@@ -55,13 +55,13 @@ if(array_key_exists($urlSegments[3], $pages)){
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/navBar.css">
-    link
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
     <?php
         require ("elements/header.php");
-        require ("elements/navBar.php");
         require ("elements/topics.php");
+        require ("elements/footer.php");
     ?>
 </body>
 </html>

@@ -10,4 +10,9 @@
             </h3>
         </section>
     </aside>
+    <nav class="nav-panel">
+        <a href="index.php">Topics</a>
+        <a href="pages/searchStudent.php">Search Student</a>
+        <a href="pages/attendanceSummary.php">Attendance Report</a>
+</nav>
 </div>
