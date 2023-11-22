@@ -123,6 +123,27 @@
     //     echo "</pre>";
     // exit();
 
+    $searchData = array (
+            array (
+                "first name" => "First Name",
+                "last name" => "Last Name",
+                "batch" => "Batch",
+                "section" => "Section",
+                "adviser" => "Adviser",
+            ),
+            array (
+                "first name" => "First Name",
+                "last name" => "Last Name",
+                "batch" => "Batch",
+                "section" => "Section",
+                "adviser" => "Adviser",
+            )
+        );
+        
+        echo "<pre>";
+            print_r($searchData);
+    exit();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,13 +158,13 @@
 <body>
     
     <?php
-        if($error ){
-                require ("pages/".$page["page"]);
-        }else{
-            require ("elements/header.php");
-            require ("elements/main.php");
-            require ("elements/footer.php");
-        };
+        // if($error ){
+        //         require ("pages/".$page["page"]);
+        // }else{
+        //     require ("elements/header.php");
+        //     require ("elements/main.php");
+        //     require ("elements/footer.php");
+        // };
         
     ?>
 

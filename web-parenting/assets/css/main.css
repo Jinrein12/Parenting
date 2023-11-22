@@ -1,0 +1,25 @@
+
+:root {
+    --header-bg: #001E80;
+    --header-textfont:#ffffff ;
+    --nav-bg: #ffffff;
+    --nav-textclr:#3a3838;
+/* container, content, and text  */
+    --main-body-bg: #a5e3fc ;
+    --container-bg:#edf5ff;
+    
+
+/* button bg color */
+    --buttons-bgc: #00f7ff;
+    --button-text: #2c2c2c;
+
+/* active and hover */
+    --active:#67b2e0;
+    --hover:#8fe8f8;
+    --active-text: #ffffff;
+/**/
+    --box-border:1px solid #808080 ;
+
+  }
+
+ 
