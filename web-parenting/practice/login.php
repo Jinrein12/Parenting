@@ -9,7 +9,7 @@
 </head>
 <body>
     <form action="" method="get">
-        <div class="info">
+        <div class="flex-direction: column;flex-direction: column;">
             <label for="">Username</label> <br>
             <input type="text"><br>
 

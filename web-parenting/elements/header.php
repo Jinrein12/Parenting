@@ -11,8 +11,8 @@
         </section>
     </aside>
     <nav class="nav-panel">
-        <a href="pages/topics.php">Topics</a>
-        <a href="pages/search.php">Search Student</a>
-        <a href="pages/attendance.php">Attendance Report</a>
+        <a href="/index.php/topics">Topics</a>
+        <a href="/index.php/search">Search Student</a>
+        <a href="/index.php/attendance">Attendance Report</a>
 </nav>
 </div>
