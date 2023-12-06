@@ -1,0 +1,10 @@
+
+/* footer css */
+.footer{
+    width: 90%;
+    height: 10vh;
+    padding-top: 10px;
+    margin: 20px auto;
+    border-top: 3px solid var(--container-bg);
+    padding: 0 20px;
+}
