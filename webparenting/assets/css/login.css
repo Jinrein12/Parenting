@@ -1,37 +1,61 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #c3f6ff;
+    background-color: unset;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 form{
-    background-color: #068bff;
-    width: 350px;
-    height: max-content;
+    background-color: #b6f4ff;
+    /* width: 350px; */
+    height: 400px;
     margin: auto;
     margin-top: 100px;
     padding: 40px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
+
 }
-form > div{
+form div{
     margin: 10px;
 }
 
 form input{
-    height: 30px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+form input:hover{
+    border: 1px solid ;
+}
+form .submit {
+    display: flex;
+}
+form .submit button{
+    background-color:#00d9ff ;
+    color: #FFFFFf;
+    width: 100px;
+    height: 50px;
     border-radius: 5px;
     border: none;
+    font-size: 20px;
+    padding: 4px;
+}
+form .submit button:hover{
+    border: 2px solid #0a0a0a;
+    background-color: #FFFFFf;
+    color: unset;
 }
 
-
-form .submit{
+form .submit span{
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
+

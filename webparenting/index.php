@@ -26,16 +26,13 @@
                 require (ELEMENTS."header.php");
                 require (PAGE_PATH.$page["file"]);
             
-            if( $urlSegments[3] != "login ")
+            if( $urlSegments[3] != "login")
                 require (ELEMENTS."footer.php");
         }
         if ($_POST) {
             $username = isset($_POST["username"]) ? $_POST["username"] : "";
             $password = isset($_POST["password"]) ? $_POST["password"] : "";
         }
-            
-        
-
 
     ?>
 </body>
