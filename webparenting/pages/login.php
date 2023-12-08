@@ -10,18 +10,21 @@
 <body>
 
     
-    <form action="" method="post" action="/webparenting/index.php/login">  
-        <section class="">
+    <form method="post" action="/webparenting/index.php/login">  
+        <section class="login-title">
+                <h3>Login</h3>
                 <h2>Parenting Seminar Attendance</h2>
+                
+                
         </section>
         <br>
         <br>
-        <div class="">
-            <input placeholder="Username" type="text"><br>
+        <div class="form-group">
+            <input placeholder="Username" type="text" name="username" value="<?= isset($username) ? $username:""?>"> <br>
         </div>
 
         <div class="form-group">
-            <input placeholder="Password" type="password"><br>
+            <input placeholder="Password" type="password" name="username" value="<?= isset($password) ? $password:""?>"><br>
         </div>
 <!-- 
         <div class="addInfo">

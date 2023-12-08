@@ -3,6 +3,12 @@
     require ("data/pages.php");
     require ("_config.php");
 
+
+    // $errors = false;
+
+    // $errors = array(
+
+    //)
 ?>
 
 <!DOCTYPE html>

@@ -4,7 +4,7 @@ $users = array(
                 array (
                     "id" => 1,
                     "name" => "Sacay, John LLoyd",
-                    "username" => "sacay.jl",
+                    "username" => "sacay",
                     "password" => "password",
                     "role_id" => 2
                 ),
